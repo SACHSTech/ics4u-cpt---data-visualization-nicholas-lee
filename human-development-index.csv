@@ -1,0 +1,442 @@
+Name,Continent,Year,HDI
+Albania,Europe,1997,0.641
+Algeria,Africa,1997,0.617
+Argentina,South America,1997,0.746
+Armenia,Europe,1997,0.623
+Australia,Oceania,1997,0.889
+Austria,Europe,1997,0.824
+Azerbaijan,Europe,1997,0.617
+Bahrain,Asia,1997,0.779
+Bangladesh,Asia,1997,0.442
+Barbados,North America,1997,0.74
+Belarus,Europe,1997,0.667
+Belgium,Europe,1997,0.862
+Belize,North America,1997,0.664
+Benin,Africa,1997,0.381
+Bolivia,South America,1997,0.58
+Botswana,Africa,1997,0.57
+Brazil,South America,1997,0.664
+Brunei,Asia,1997,0.81
+Bulgaria,Europe,1997,0.704
+Burundi,Africa,1997,0.296
+Cambodia,Asia,1997,0.397
+Cameroon,Africa,1997,0.422
+Canada,North America,1997,0.862
+Central African Republic,Africa,1997,0.302
+Chile,South America,1997,0.741
+China,Asia,1997,0.568
+Colombia,South America,1997,0.642
+Congo,Africa,1997,0.505
+Costa Rica,North America,1997,0.697
+Cote d'Ivoire,Africa,1997,0.391
+Croatia,Europe,1997,0.719
+Cuba,North America,1997,0.669
+Cyprus,Europe,1997,0.792
+Czechia,Europe,1997,0.774
+Democratic Republic of Congo,Africa,1997,0.334
+Denmark,Europe,1997,0.843
+Djibouti,Africa,1997,0.357
+Dominican Republic,North America,1997,0.641
+Ecuador,South America,1997,0.668
+Egypt,Africa,1997,0.591
+El Salvador,North America,1997,0.595
+Estonia,Europe,1997,0.751
+Eswatini,Africa,1997,0.504
+Fiji,Oceania,1997,0.675
+Finland,Europe,1997,0.832
+France,Europe,1997,0.834
+Gabon,Africa,1997,0.637
+Gambia,Africa,1997,0.364
+Germany,Europe,1997,0.844
+Ghana,Africa,1997,0.476
+Greece,Europe,1997,0.777
+Guatemala,North America,1997,0.523
+Guinea,Africa,1997,0.307
+Guyana,South America,1997,0.594
+Haiti,North America,1997,0.431
+Honduras,North America,1997,0.541
+Hong Kong,Asia,1997,0.816
+Hungary,Europe,1997,0.747
+Iceland,Europe,1997,0.84
+India,Asia,1997,0.473
+Indonesia,Asia,1997,0.59
+Iran,Asia,1997,0.653
+Iraq,Asia,1997,0.582
+Ireland,Europe,1997,0.809
+Israel,Asia,1997,0.835
+Italy,Europe,1997,0.814
+Jamaica,North America,1997,0.661
+Japan,Asia,1997,0.848
+Jordan,Asia,1997,0.689
+Kazakhstan,Europe,1997,0.669
+Kenya,Africa,1997,0.453
+Kuwait,Asia,1997,0.775
+Kyrgyzstan,Asia,1997,0.576
+Laos,Asia,1997,0.448
+Latvia,Europe,1997,0.692
+Lesotho,Africa,1997,0.48
+Libya,Africa,1997,0.715
+Lithuania,Europe,1997,0.724
+Luxembourg,Europe,1997,0.826
+Malawi,Africa,1997,0.404
+Malaysia,Asia,1997,0.706
+Maldives,Asia,1997,0.568
+Mali,Africa,1997,0.281
+Malta,Europe,1997,0.768
+Mauritania,Africa,1997,0.427
+Mauritius,Africa,1997,0.656
+Mexico,North America,1997,0.683
+Moldova,Europe,1997,0.593
+Mongolia,Asia,1997,0.568
+Morocco,Africa,1997,0.503
+Mozambique,Africa,1997,0.266
+Myanmar,Asia,1997,0.41
+Namibia,Africa,1997,0.575
+Nepal,Asia,1997,0.426
+Netherlands,Europe,1997,0.865
+New Zealand,Oceania,1997,0.86
+Nicaragua,North America,1997,0.543
+Niger,Africa,1997,0.238
+Norway,Europe,1997,0.894
+Pakistan,Asia,1997,0.437
+Panama,North America,1997,0.7
+Papua New Guinea,Oceania,1997,0.435
+Paraguay,South America,1997,0.618
+Peru,South America,1997,0.654
+Philippines,Asia,1997,0.611
+Poland,Europe,1997,0.759
+Portugal,Europe,1997,0.773
+Qatar,Asia,1997,0.8
+Romania,Europe,1997,0.696
+Russia,Europe,1997,0.704
+Rwanda,Africa,1997,0.288
+Samoa,Oceania,1997,0.63
+Sao Tome and Principe,Africa,1997,0.477
+Saudi Arabia,Asia,1997,0.731
+Senegal,Africa,1997,0.37
+Serbia,Europe,1997,0.705
+Sierra Leone,Africa,1997,0.268
+Singapore,Asia,1997,0.793
+Slovakia,Europe,1997,0.757
+Slovenia,Europe,1997,0.796
+South Africa,Africa,1997,0.644
+South Korea,Asia,1997,0.8
+Spain,Europe,1997,0.81
+Sri Lanka,Asia,1997,0.662
+Sudan,Africa,1997,0.384
+Sweden,Europe,1997,0.874
+Switzerland,Europe,1997,0.864
+Syria,Asia,1997,0.587
+Tajikistan,Asia,1997,0.538
+Tanzania,Africa,1997,0.375
+Thailand,Asia,1997,0.625
+Togo,Africa,1997,0.424
+Tonga,Oceania,1997,0.671
+Trinidad and Tobago,North America,1997,0.697
+Tunisia,Africa,1997,0.623
+Turkey,Europe,1997,0.624
+Uganda,Africa,1997,0.353
+Ukraine,Europe,1997,0.663
+United Arab Emirates,Asia,1997,0.778
+United Kingdom,Europe,1997,0.849
+United States,North America,1997,0.881
+Uruguay,South America,1997,0.727
+Venezuela,South America,1997,0.664
+Vietnam,Asia,1997,0.539
+Yemen,Asia,1997,0.427
+Zambia,Africa,1997,0.419
+Zimbabwe,Africa,1997,0.459
+Albania,Europe,2007,0.72
+Algeria,Africa,2007,0.707
+Argentina,South America,2007,0.792
+Armenia,Europe,2007,0.72
+Australia,Oceania,2007,0.915
+Austria,Europe,2007,0.881
+Azerbaijan,Europe,2007,0.709
+Bahrain,Asia,2007,0.796
+Bangladesh,Asia,2007,0.52
+Barbados,North America,2007,0.777
+Belarus,Europe,2007,0.757
+Belgium,Europe,2007,0.899
+Belize,North America,2007,0.699
+Benin,Africa,2007,0.455
+Bolivia,South America,2007,0.631
+Botswana,Africa,2007,0.625
+Brazil,South America,2007,0.705
+Brunei,Asia,2007,0.84
+Bulgaria,Europe,2007,0.764
+Burundi,Africa,2007,0.361
+Cambodia,Asia,2007,0.513
+Cameroon,Africa,2007,0.484
+Canada,North America,2007,0.897
+Central African Republic,Africa,2007,0.331
+Chile,South America,2007,0.795
+China,Asia,2007,0.675
+Colombia,South America,2007,0.704
+Congo,Africa,2007,0.52
+Costa Rica,North America,2007,0.742
+Cote d'Ivoire,Africa,2007,0.424
+Croatia,Europe,2007,0.8
+Cuba,North America,2007,0.77
+Cyprus,Europe,2007,0.846
+Czechia,Europe,2007,0.85
+Democratic Republic of Congo,Africa,2007,0.379
+Denmark,Europe,2007,0.904
+Djibouti,Africa,2007,0.426
+Dominican Republic,North America,2007,0.691
+Ecuador,South America,2007,0.698
+Egypt,Africa,2007,0.65
+El Salvador,North America,2007,0.656
+Estonia,Europe,2007,0.839
+Eswatini,Africa,2007,0.507
+Fiji,Oceania,2007,0.702
+Finland,Europe,2007,0.901
+France,Europe,2007,0.876
+Gabon,Africa,2007,0.652
+Gambia,Africa,2007,0.427
+Germany,Europe,2007,0.915
+Ghana,Africa,2007,0.53
+Greece,Europe,2007,0.849
+Guatemala,North America,2007,0.59
+Guinea,Africa,2007,0.39
+Guyana,South America,2007,0.618
+Haiti,North America,2007,0.462
+Honduras,North America,2007,0.593
+Hong Kong,Asia,2007,0.887
+Hungary,Europe,2007,0.813
+Iceland,Europe,2007,0.897
+India,Asia,2007,0.556
+Indonesia,Asia,2007,0.642
+Iran,Asia,2007,0.736
+Iraq,Asia,2007,0.638
+Ireland,Europe,2007,0.908
+Israel,Asia,2007,0.881
+Italy,Europe,2007,0.866
+Jamaica,North America,2007,0.705
+Japan,Asia,2007,0.88
+Jordan,Asia,2007,0.735
+Kazakhstan,Europe,2007,0.759
+Kenya,Africa,2007,0.514
+Kuwait,Asia,2007,0.788
+Kyrgyzstan,Asia,2007,0.628
+Laos,Asia,2007,0.521
+Latvia,Europe,2007,0.818
+Lesotho,Africa,2007,0.473
+Libya,Africa,2007,0.752
+Lithuania,Europe,2007,0.825
+Luxembourg,Europe,2007,0.888
+Malawi,Africa,2007,0.4
+Malaysia,Asia,2007,0.75
+Maldives,Asia,2007,0.651
+Mali,Africa,2007,0.367
+Malta,Europe,2007,0.827
+Mauritania,Africa,2007,0.476
+Mauritius,Africa,2007,0.728
+Mexico,North America,2007,0.739
+Moldova,Europe,2007,0.661
+Mongolia,Asia,2007,0.672
+Morocco,Africa,2007,0.594
+Mozambique,Africa,2007,0.378
+Myanmar,Asia,2007,0.498
+Namibia,Africa,2007,0.568
+Nepal,Asia,2007,0.491
+Netherlands,Europe,2007,0.904
+New Zealand,Oceania,2007,0.894
+Nicaragua,North America,2007,0.607
+Niger,Africa,2007,0.294
+Norway,Europe,2007,0.938
+Pakistan,Asia,2007,0.513
+Panama,North America,2007,0.751
+Papua New Guinea,Oceania,2007,0.499
+Paraguay,South America,2007,0.655
+Peru,South America,2007,0.703
+Philippines,Asia,2007,0.657
+Poland,Europe,2007,0.819
+Portugal,Europe,2007,0.81
+Qatar,Asia,2007,0.83
+Romania,Europe,2007,0.781
+Russia,Europe,2007,0.767
+Rwanda,Africa,2007,0.445
+Samoa,Oceania,2007,0.681
+Sao Tome and Principe,Africa,2007,0.53
+Saudi Arabia,Asia,2007,0.783
+Senegal,Africa,2007,0.436
+Serbia,Europe,2007,0.751
+Sierra Leone,Africa,2007,0.363
+Singapore,Asia,2007,0.878
+Slovakia,Europe,2007,0.814
+Slovenia,Europe,2007,0.873
+South Africa,Africa,2007,0.621
+South Korea,Asia,2007,0.869
+Spain,Europe,2007,0.853
+Sri Lanka,Asia,2007,0.73
+Sudan,Africa,2007,0.451
+Sweden,Europe,2007,0.905
+Switzerland,Europe,2007,0.915
+Syria,Asia,2007,0.649
+Tajikistan,Asia,2007,0.604
+Tanzania,Africa,2007,0.468
+Thailand,Asia,2007,0.71
+Togo,Africa,2007,0.441
+Tonga,Oceania,2007,0.698
+Trinidad and Tobago,North America,2007,0.768
+Tunisia,Africa,2007,0.701
+Turkey,Europe,2007,0.708
+Uganda,Africa,2007,0.459
+Ukraine,Europe,2007,0.729
+United Arab Emirates,Asia,2007,0.835
+United Kingdom,Europe,2007,0.892
+United States,North America,2007,0.905
+Uruguay,South America,2007,0.762
+Venezuela,South America,2007,0.744
+Vietnam,Asia,2007,0.632
+Yemen,Asia,2007,0.482
+Zambia,Africa,2007,0.503
+Zimbabwe,Africa,2007,0.442
+Albania,Europe,2017,0.785
+Algeria,Africa,2017,0.754
+Argentina,South America,2017,0.825
+Armenia,Europe,2017,0.755
+Australia,Oceania,2017,0.939
+Austria,Europe,2017,0.908
+Azerbaijan,Europe,2017,0.757
+Bahrain,Asia,2017,0.846
+Bangladesh,Asia,2017,0.608
+Barbados,North America,2017,0.8
+Belarus,Europe,2017,0.808
+Belgium,Europe,2017,0.916
+Belize,North America,2017,0.708
+Benin,Africa,2017,0.515
+Bolivia,South America,2017,0.693
+Botswana,Africa,2017,0.717
+Brazil,South America,2017,0.759
+Brunei,Asia,2017,0.853
+Bulgaria,Europe,2017,0.813
+Burundi,Africa,2017,0.417
+Cambodia,Asia,2017,0.582
+Cameroon,Africa,2017,0.556
+Canada,North America,2017,0.926
+Central African Republic,Africa,2017,0.367
+Chile,South America,2017,0.843
+China,Asia,2017,0.752
+Colombia,South America,2017,0.747
+Congo,Africa,2017,0.606
+Costa Rica,North America,2017,0.794
+Cote d'Ivoire,Africa,2017,0.492
+Croatia,Europe,2017,0.831
+Cuba,North America,2017,0.777
+Cyprus,Europe,2017,0.869
+Czechia,Europe,2017,0.888
+Democratic Republic of Congo,Africa,2017,0.457
+Denmark,Europe,2017,0.929
+Djibouti,Africa,2017,0.476
+Dominican Republic,North America,2017,0.736
+Ecuador,South America,2017,0.752
+Egypt,Africa,2017,0.696
+El Salvador,North America,2017,0.674
+Estonia,Europe,2017,0.871
+Eswatini,Africa,2017,0.588
+Fiji,Oceania,2017,0.741
+Finland,Europe,2017,0.92
+France,Europe,2017,0.901
+Gabon,Africa,2017,0.702
+Gambia,Africa,2017,0.46
+Germany,Europe,2017,0.936
+Ghana,Africa,2017,0.592
+Greece,Europe,2017,0.87
+Guatemala,North America,2017,0.65
+Guinea,Africa,2017,0.459
+Guyana,South America,2017,0.654
+Haiti,North America,2017,0.498
+Honduras,North America,2017,0.617
+Hong Kong,Asia,2017,0.933
+Hungary,Europe,2017,0.838
+Iceland,Europe,2017,0.935
+India,Asia,2017,0.64
+Indonesia,Asia,2017,0.694
+Iran,Asia,2017,0.798
+Iraq,Asia,2017,0.685
+Ireland,Europe,2017,0.938
+Israel,Asia,2017,0.903
+Italy,Europe,2017,0.88
+Jamaica,North America,2017,0.732
+Japan,Asia,2017,0.909
+Jordan,Asia,2017,0.735
+Kazakhstan,Europe,2017,0.8
+Kenya,Africa,2017,0.59
+Kuwait,Asia,2017,0.803
+Kyrgyzstan,Asia,2017,0.672
+Laos,Asia,2017,0.601
+Latvia,Europe,2017,0.847
+Lesotho,Africa,2017,0.52
+Libya,Africa,2017,0.706
+Lithuania,Europe,2017,0.858
+Luxembourg,Europe,2017,0.904
+Malawi,Africa,2017,0.477
+Malaysia,Asia,2017,0.802
+Maldives,Asia,2017,0.717
+Mali,Africa,2017,0.427
+Malta,Europe,2017,0.878
+Mauritania,Africa,2017,0.52
+Mauritius,Africa,2017,0.79
+Mexico,North America,2017,0.774
+Moldova,Europe,2017,0.7
+Mongolia,Asia,2017,0.741
+Morocco,Africa,2017,0.667
+Mozambique,Africa,2017,0.437
+Myanmar,Asia,2017,0.578
+Namibia,Africa,2017,0.647
+Nepal,Asia,2017,0.574
+Netherlands,Europe,2017,0.931
+New Zealand,Oceania,2017,0.917
+Nicaragua,North America,2017,0.658
+Niger,Africa,2017,0.354
+Norway,Europe,2017,0.953
+Pakistan,Asia,2017,0.562
+Panama,North America,2017,0.789
+Papua New Guinea,Oceania,2017,0.544
+Paraguay,South America,2017,0.702
+Peru,South America,2017,0.75
+Philippines,Asia,2017,0.699
+Poland,Europe,2017,0.865
+Portugal,Europe,2017,0.847
+Qatar,Asia,2017,0.856
+Romania,Europe,2017,0.811
+Russia,Europe,2017,0.816
+Rwanda,Africa,2017,0.524
+Samoa,Oceania,2017,0.713
+Sao Tome and Principe,Africa,2017,0.589
+Saudi Arabia,Asia,2017,0.853
+Senegal,Africa,2017,0.505
+Serbia,Europe,2017,0.787
+Sierra Leone,Africa,2017,0.419
+Singapore,Asia,2017,0.932
+Slovakia,Europe,2017,0.855
+Slovenia,Europe,2017,0.896
+South Africa,Africa,2017,0.699
+South Korea,Asia,2017,0.903
+Spain,Europe,2017,0.891
+Sri Lanka,Asia,2017,0.77
+Sudan,Africa,2017,0.502
+Sweden,Europe,2017,0.933
+Switzerland,Europe,2017,0.944
+Syria,Asia,2017,0.536
+Tajikistan,Asia,2017,0.65
+Tanzania,Africa,2017,0.538
+Thailand,Asia,2017,0.755
+Togo,Africa,2017,0.503
+Tonga,Oceania,2017,0.726
+Trinidad and Tobago,North America,2017,0.784
+Tunisia,Africa,2017,0.735
+Turkey,Europe,2017,0.791
+Uganda,Africa,2017,0.516
+Ukraine,Europe,2017,0.751
+United Arab Emirates,Asia,2017,0.863
+United Kingdom,Europe,2017,0.922
+United States,North America,2017,0.924
+Uruguay,South America,2017,0.804
+Venezuela,South America,2017,0.761
+Vietnam,Asia,2017,0.694
+Yemen,Asia,2017,0.452
+Zambia,Africa,2017,0.588
+Zimbabwe,Africa,2017,0.535
