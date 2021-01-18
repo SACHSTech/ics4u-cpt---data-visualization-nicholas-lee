@@ -37,7 +37,7 @@ public class Country {
     }
 
     public String toString(){
-        return this.name + " " + this.continent + " " + this.year + " " + this.HDI;
+        return this.name + " | " + this.continent + " | " + this.year + " | " + this.HDI;
     }
 
 
