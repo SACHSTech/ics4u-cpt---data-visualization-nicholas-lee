@@ -83,6 +83,30 @@ public class Main {
             Searching.nameSearch(countries, strKey);
         }
 
+        if (strChoice.equals("3")) {
+            System.out.println("Filter by year - 1 \nFilter by continent -2 \nFilter by both - 3");
+            System.out.print("Enter Choice: ");
+            String strFilterChoice = key.readLine();
+
+            if (strFilterChoice.equals("1")) {
+                System.out.print("Enter year (1997, 2007, or 2017): ");
+                int intYear = Integer.parseInt(key.readLine());
+                Searching.yearSearch(countries, intYear);
+
+            } else if (strFilterChoice.equals("2")) {
+                System.out.print("Enter continent (Africa, Asia, Europe, North America, South America, Oceania): ");
+                String strCont = key.readLine();
+                Searching.contSearch(countries, strCont);
+
+            } else if (strFilterChoice.equals("3")) {
+                System.out.print("Enter year (1997, 2007, or 2017): ");
+                int intYear = Integer.parseInt(key.readLine());
+                System.out.print("Enter continent (Africa, Asia, Europe, North America, South America, Oceania): ");
+                String strCont = key.readLine();
+                Searching.bothSearch(countries, intYear, strCont);
+            }
+        }
+
 
     }
 
