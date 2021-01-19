@@ -91,20 +91,45 @@ public class Main {
             if (strFilterChoice.equals("1")) {
                 System.out.print("Enter year (1997, 2007, or 2017): ");
                 int intYear = Integer.parseInt(key.readLine());
-                Searching.yearSearch(countries, intYear);
+                Searching.yearFilterSearch(countries, intYear);
 
             } else if (strFilterChoice.equals("2")) {
                 System.out.print("Enter continent (Africa, Asia, Europe, North America, South America, Oceania): ");
                 String strCont = key.readLine();
-                Searching.contSearch(countries, strCont);
+                Searching.contFilterSearch(countries, strCont);
 
             } else if (strFilterChoice.equals("3")) {
                 System.out.print("Enter year (1997, 2007, or 2017): ");
                 int intYear = Integer.parseInt(key.readLine());
                 System.out.print("Enter continent (Africa, Asia, Europe, North America, South America, Oceania): ");
                 String strCont = key.readLine();
-                Searching.bothSearch(countries, intYear, strCont);
+                Searching.twoFilterSearch(countries, intYear, strCont);
             }
+        }
+
+        if (strChoice.equals("4")) {
+            System.out.println("To view an individual record please enter the name of the country and year");
+            System.out.print("Enter country name  (Case Sensitive - E.g. Canada): ");
+            String strName = key.readLine();
+            System.out.print("Enter year (1997, 2007, or 2017): ");
+            int intYear = Integer.parseInt(key.readLine());
+            Searching.individualSearch(countries, strName, intYear);
+        }
+
+        if (strChoice.equals("5")) {
+            System.out.println("---------------Summary Report---------------");
+            System.out.println("Total number of records: " + countries.length);
+            System.out.println("Total number of countries: " + (countries.length/3));
+            System.out.println("Average HDI (Total): ");
+            System.out.println("Average HDI (1997): ");
+            System.out.println("Average HDI (2007): ");
+            System.out.println("Average HDI (2017): ");
+            Sorting.sortMaxHDI(countries);
+            System.out.println("Highest HDI: " + countries[0]);
+            Sorting.sortMinHDI(countries);
+            System.out.println("Lowest HDI: " + countries[0]);
+            System.out.println("Median: " + countries[countries.length/2]);
+
         }
 
 

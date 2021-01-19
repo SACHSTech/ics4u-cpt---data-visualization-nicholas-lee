@@ -15,7 +15,7 @@ public class Searching {
 
     }
 
-    public static String yearSearch(Country[] theArray, int intKey){
+    public static String yearFilterSearch(Country[] theArray, int intKey){
         int intElement;
   
           for(int i = 0; i < theArray.length; i++){
@@ -28,7 +28,7 @@ public class Searching {
   
     }
 
-    public static String contSearch(Country[] theArray, String strKey){
+    public static String contFilterSearch(Country[] theArray, String strKey){
         String strElement;
   
           for(int i = 0; i < theArray.length; i++){
@@ -41,7 +41,7 @@ public class Searching {
   
     }
 
-    public static String bothSearch(Country[] theArray, int intYear, String strCont){
+    public static String twoFilterSearch(Country[] theArray, int intYear, String strCont){
         String strTheCont;
         int intTheYear;
   
@@ -53,6 +53,22 @@ public class Searching {
               }
           }
           return " ";
+  
+    }
+
+    public static String individualSearch(Country[] theArray, String strName, int intYear){
+        String strTheName;
+        int intTheYear;
+  
+          for(int i = 0; i < theArray.length; i++){
+              intTheYear = theArray[i].getYear();
+              strTheName = theArray[i].getName();				
+              if(strTheName.equals(strName) && intTheYear == intYear){
+                  System.out.println(theArray[i].toString());
+                  return theArray[i].toString();
+              }
+          }
+          return "Not found in data set";
   
     }
 
