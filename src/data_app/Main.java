@@ -5,8 +5,23 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.*;
 
-public class Main {
-    
+import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+    @Override public void start(Stage primaryStage) throws Exception {
+        primaryStage.setScene(new Scene(Charts.theLineChart()));
+        primaryStage.show();
+    }
+
     public static void main(String[] args) throws IOException{
 
         BufferedReader data = new BufferedReader(new FileReader("HDI.csv"));
@@ -120,18 +135,30 @@ public class Main {
             System.out.println("---------------Summary Report---------------");
             System.out.println("Total number of records: " + countries.length);
             System.out.println("Total number of countries: " + (countries.length/3));
-            System.out.println("Average HDI (Total): ");
-            System.out.println("Average HDI (1997): ");
-            System.out.println("Average HDI (2007): ");
-            System.out.println("Average HDI (2017): ");
+            System.out.println("Average HDI (1997): " + Average.yearAverage(countries, 1997));
+            System.out.println("Average HDI (2007): " + Average.yearAverage(countries, 2007));
+            System.out.println("Average HDI (2017): " + Average.yearAverage(countries, 2017));
+            System.out.println("Average HDI (All Three Years): " + Average.totalAverage(countries));
             Sorting.sortMaxHDI(countries);
             System.out.println("Highest HDI: " + countries[0]);
             Sorting.sortMinHDI(countries);
             System.out.println("Lowest HDI: " + countries[0]);
             System.out.println("Median: " + countries[countries.length/2]);
-
         }
 
+        if (strChoice.equals("6")) {
+            System.out.println("For bar chart - 1 \nFor line chart - 2");
+            String strSearchChoice = key.readLine();
+            if (strSearchChoice.equals("1")) {
+                launch(args);
+            }
+
+            if (strSearchChoice.equals("2")) {
+
+            }
+
+
+        }
 
     }
 
