@@ -164,6 +164,12 @@ public class Main extends Application {
 
             if (strChartChoice.equals("2")) {
                 intChart = 0;
+                dblCan1997 = Searching.individualHDISearch(countries, "Canada", 1997);
+                dblCan2007 = Searching.individualHDISearch(countries, "Canada", 2007);
+                dblCan2017 = Searching.individualHDISearch(countries, "Canada", 2017);
+                dblWorld1997 = Average.yearAverage(countries, 1997);
+                dblWorld2007 = Average.yearAverage(countries, 2007);
+                dblWorld2017 = Average.yearAverage(countries, 2017); 
                 launch(args);
             }
 
@@ -176,7 +182,7 @@ public class Main extends Application {
         if (intChart == 1) {
             primaryStage.setScene(new Scene(Charts.theBarChart(dblCan1997, dblCan2007, dblCan2017, dblWorld1997, dblWorld2007, dblWorld2017)));
         } else {
-            primaryStage.setScene(new Scene(Charts.theLineChart()));
+            primaryStage.setScene(new Scene(Charts.theLineChart(dblCan1997, dblCan2007, dblCan2017, dblWorld1997, dblWorld2007, dblWorld2017)));
         }
         primaryStage.show();
     }

@@ -46,34 +46,36 @@ public class Charts {
                     new BarChart.Data(years[2], world2017)))
             );
         chart = new BarChart(xAxis, yAxis, barChartData, 20.0);
+        chart.setTitle("Bar Chart of Canada vs World HDI");
         return chart;
     }
 
-    public static LineChart chart2;
-    public static NumberAxis xAxis2;
+    public static final String[] CATEGORIES = { "1997", "2007", "2017"};
+    public static LineChart<String, Number> chart2;
+    public static CategoryAxis xAxis2;
     public static NumberAxis yAxis2;
 
-    public static Parent theLineChart(){
-        xAxis2 = new NumberAxis("Values for X-Axis", 0, 3, 1);
-        yAxis2 = new NumberAxis("Values for Y-Axis", 0, 3, 1);
-        ObservableList<XYChart.Series<Double,Double>> lineChartData =
-            FXCollections.observableArrayList(
-                new LineChart.Series<>("Series 1",
-                                       FXCollections.observableArrayList(
-                    new XYChart.Data<>(0.0, 1.0),
-                    new XYChart.Data<>(1.2, 1.4),
-                    new XYChart.Data<>(2.2, 1.9),
-                    new XYChart.Data<>(2.7, 2.3),
-                    new XYChart.Data<>(2.9, 0.5))),
-                new LineChart.Series<>("Series 2",
-                                       FXCollections.observableArrayList(
-                    new XYChart.Data<>(0.0, 1.6),
-                    new XYChart.Data<>(0.8, 0.4),
-                    new XYChart.Data<>(1.4, 2.9),
-                    new XYChart.Data<>(2.1, 1.3),
-                    new XYChart.Data<>(2.6, 0.9)))
-            );
-        chart2 = new LineChart(xAxis2, yAxis2, lineChartData);
+    public static Parent theLineChart(double can1997, double can2007, double can2017, double world1997, double world2007, double world2017){
+        xAxis2 = new CategoryAxis();
+        yAxis2 = new NumberAxis("HDI Score", 0.0, 1.0, 0.2);
+        chart2 = new LineChart<>(xAxis2, yAxis2);
+        // setup chart
+        chart2.setTitle("Line Chart of Canada HDI vs World HDI");
+        xAxis2.setLabel("Year");
+        yAxis2.setLabel("HDI Score");
+        // add starting data
+        XYChart.Series<String, Number> series = new XYChart.Series<>();
+        series.setName("World HDI");
+        series.getData().add(new XYChart.Data<String, Number>(CATEGORIES[0], world1997));
+        series.getData().add(new XYChart.Data<String, Number>(CATEGORIES[1], world2007));
+        series.getData().add(new XYChart.Data<String, Number>(CATEGORIES[2], world2017));
+        chart2.getData().add(series);
+        XYChart.Series<String, Number> series2 = new XYChart.Series<>();
+        series2.setName("Canada HDI");
+        series2.getData().add(new XYChart.Data<String, Number>(CATEGORIES[0], can1997));
+        series2.getData().add(new XYChart.Data<String, Number>(CATEGORIES[1], can2007));
+        series2.getData().add(new XYChart.Data<String, Number>(CATEGORIES[2], can2017));
+        chart2.getData().add(series2);
         return chart2;
     }
 
