@@ -6,13 +6,7 @@ import java.io.IOException;
 import java.io.*;
 
 import javafx.application.Application;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.chart.BarChart;
-import javafx.scene.chart.CategoryAxis;
-import javafx.scene.chart.NumberAxis;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -77,7 +71,7 @@ public class Main extends Application {
             String strSearchChoice = key.readLine();
 
             if (strSearchChoice.equals("1")) {
-                Sorting.sortMinHDI(countries);
+                Data_Interaction.sortMinHDI(countries);
                 System.out.println("\n Name   Continent  Year  HDI");
                 for (int i = 0; i < countries.length; i++) {
                     System.out.println(countries[i]);
@@ -85,7 +79,7 @@ public class Main extends Application {
             }
 
             if (strSearchChoice.equals("2")) {
-                Sorting.sortMaxHDI(countries);
+                Data_Interaction.sortMaxHDI(countries);
                 System.out.println("\n Name   Continent  Year  HDI");
                 for (int i = 0; i < countries.length; i++) {
                     System.out.println(countries[i]);
@@ -97,7 +91,7 @@ public class Main extends Application {
             System.out.println("Please enter the name of the country (Case Sensitive - E.g. Canada)");
             System.out.print("Enter Key: ");
             String strKey = key.readLine();
-            Searching.nameSearch(countries, strKey);
+            Data_Interaction.nameSearch(countries, strKey);
         }
 
         if (strChoice.equals("3")) {
@@ -108,19 +102,19 @@ public class Main extends Application {
             if (strFilterChoice.equals("1")) {
                 System.out.print("Enter year (1997, 2007, or 2017): ");
                 int intYear = Integer.parseInt(key.readLine());
-                Searching.yearFilterSearch(countries, intYear);
+                Data_Interaction.yearFilterSearch(countries, intYear);
 
             } else if (strFilterChoice.equals("2")) {
                 System.out.print("Enter continent (Africa, Asia, Europe, North America, South America, Oceania): ");
                 String strCont = key.readLine();
-                Searching.contFilterSearch(countries, strCont);
+                Data_Interaction.contFilterSearch(countries, strCont);
 
             } else if (strFilterChoice.equals("3")) {
                 System.out.print("Enter year (1997, 2007, or 2017): ");
                 int intYear = Integer.parseInt(key.readLine());
                 System.out.print("Enter continent (Africa, Asia, Europe, North America, South America, Oceania): ");
                 String strCont = key.readLine();
-                Searching.twoFilterSearch(countries, intYear, strCont);
+                Data_Interaction.twoFilterSearch(countries, intYear, strCont);
             }
         }
 
@@ -130,20 +124,20 @@ public class Main extends Application {
             String strName = key.readLine();
             System.out.print("Enter year (1997, 2007, or 2017): ");
             int intYear = Integer.parseInt(key.readLine());
-            Searching.individualSearch(countries, strName, intYear);
+            Data_Interaction.individualSearch(countries, strName, intYear);
         }
 
         if (strChoice.equals("5")) {
             System.out.println("---------------Summary Report---------------");
             System.out.println("Total number of records: " + countries.length);
             System.out.println("Total number of countries: " + (countries.length / 3));
-            System.out.println("Average HDI (1997): " + Average.yearAverage(countries, 1997));
-            System.out.println("Average HDI (2007): " + Average.yearAverage(countries, 2007));
-            System.out.println("Average HDI (2017): " + Average.yearAverage(countries, 2017));
-            System.out.println("Average HDI (All Three Years): " + Average.totalAverage(countries));
-            Sorting.sortMaxHDI(countries);
+            System.out.println("Average HDI (1997): " + Data_Interaction.yearAverage(countries, 1997));
+            System.out.println("Average HDI (2007): " + Data_Interaction.yearAverage(countries, 2007));
+            System.out.println("Average HDI (2017): " + Data_Interaction.yearAverage(countries, 2017));
+            System.out.println("Average HDI (All Three Years): " + Data_Interaction.totalAverage(countries));
+            Data_Interaction.sortMaxHDI(countries);
             System.out.println("Highest HDI: " + countries[0]);
-            Sorting.sortMinHDI(countries);
+            Data_Interaction.sortMinHDI(countries);
             System.out.println("Lowest HDI: " + countries[0]);
             System.out.println("Median: " + countries[countries.length / 2]);
         }
@@ -153,23 +147,23 @@ public class Main extends Application {
             String strChartChoice = key.readLine();
             if (strChartChoice.equals("1")) {
                 intChart = 1;
-                dblCan1997 = Searching.individualHDISearch(countries, "Canada", 1997);
-                dblCan2007 = Searching.individualHDISearch(countries, "Canada", 2007);
-                dblCan2017 = Searching.individualHDISearch(countries, "Canada", 2017);
-                dblWorld1997 = Average.yearAverage(countries, 1997);
-                dblWorld2007 = Average.yearAverage(countries, 2007);
-                dblWorld2017 = Average.yearAverage(countries, 2017);   
+                dblCan1997 = Data_Interaction.individualHDISearch(countries, "Canada", 1997);
+                dblCan2007 = Data_Interaction.individualHDISearch(countries, "Canada", 2007);
+                dblCan2017 = Data_Interaction.individualHDISearch(countries, "Canada", 2017);
+                dblWorld1997 = Data_Interaction.yearAverage(countries, 1997);
+                dblWorld2007 = Data_Interaction.yearAverage(countries, 2007);
+                dblWorld2017 = Data_Interaction.yearAverage(countries, 2017);   
                 launch(args);
             }
 
             if (strChartChoice.equals("2")) {
                 intChart = 0;
-                dblCan1997 = Searching.individualHDISearch(countries, "Canada", 1997);
-                dblCan2007 = Searching.individualHDISearch(countries, "Canada", 2007);
-                dblCan2017 = Searching.individualHDISearch(countries, "Canada", 2017);
-                dblWorld1997 = Average.yearAverage(countries, 1997);
-                dblWorld2007 = Average.yearAverage(countries, 2007);
-                dblWorld2017 = Average.yearAverage(countries, 2017); 
+                dblCan1997 = Data_Interaction.individualHDISearch(countries, "Canada", 1997);
+                dblCan2007 = Data_Interaction.individualHDISearch(countries, "Canada", 2007);
+                dblCan2017 = Data_Interaction.individualHDISearch(countries, "Canada", 2017);
+                dblWorld1997 = Data_Interaction.yearAverage(countries, 1997);
+                dblWorld2007 = Data_Interaction.yearAverage(countries, 2007);
+                dblWorld2017 = Data_Interaction.yearAverage(countries, 2017); 
                 launch(args);
             }
 
