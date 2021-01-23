@@ -69,7 +69,20 @@ public class Searching {
               }
           }
           return "Not found in data set";
+    }
+
+    public static double individualHDISearch(Country[] theArray, String strName, int intYear){
+        String strTheName;
+        int intTheYear;
   
+          for(int i = 0; i < theArray.length; i++){
+              intTheYear = theArray[i].getYear();
+              strTheName = theArray[i].getName();				
+              if(strTheName.equals(strName) && intTheYear == intYear){
+                  return theArray[i].getHDI();
+              }
+          }
+          return -1;
     }
 
 }

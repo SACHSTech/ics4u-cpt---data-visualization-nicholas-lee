@@ -17,17 +17,20 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    @Override public void start(Stage primaryStage) throws Exception {
-        primaryStage.setScene(new Scene(Charts.theLineChart()));
-        primaryStage.show();
-    }
+    static int intChart;
+    static double dblCan1997;
+    static double dblCan2007;
+    static double dblCan2017;
+    static double dblWorld1997;
+    static double dblWorld2007;
+    static double dblWorld2017;
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
 
         BufferedReader data = new BufferedReader(new FileReader("HDI.csv"));
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
 
-		String strLine = "";
+        String strLine = "";
         String splitBy = ",";
 
         String name;
@@ -40,7 +43,7 @@ public class Main extends Application {
 
         Country[] countries = new Country[441];
 
-        while(intCount < 441){
+        while (intCount < 441) {
 
             strLine = data.readLine();
             String[] elements = strLine.split(splitBy);
@@ -56,7 +59,6 @@ public class Main extends Application {
             intCount++;
         }
         data.close();
-
 
         System.out.println("\nWelcome to the Human Development Index (HDI) App");
         System.out.println("Please select one of the options below: ");
@@ -134,7 +136,7 @@ public class Main extends Application {
         if (strChoice.equals("5")) {
             System.out.println("---------------Summary Report---------------");
             System.out.println("Total number of records: " + countries.length);
-            System.out.println("Total number of countries: " + (countries.length/3));
+            System.out.println("Total number of countries: " + (countries.length / 3));
             System.out.println("Average HDI (1997): " + Average.yearAverage(countries, 1997));
             System.out.println("Average HDI (2007): " + Average.yearAverage(countries, 2007));
             System.out.println("Average HDI (2017): " + Average.yearAverage(countries, 2017));
@@ -143,23 +145,42 @@ public class Main extends Application {
             System.out.println("Highest HDI: " + countries[0]);
             Sorting.sortMinHDI(countries);
             System.out.println("Lowest HDI: " + countries[0]);
-            System.out.println("Median: " + countries[countries.length/2]);
+            System.out.println("Median: " + countries[countries.length / 2]);
         }
 
         if (strChoice.equals("6")) {
             System.out.println("For bar chart - 1 \nFor line chart - 2");
-            String strSearchChoice = key.readLine();
-            if (strSearchChoice.equals("1")) {
+            String strChartChoice = key.readLine();
+            if (strChartChoice.equals("1")) {
+                intChart = 1;
+                dblCan1997 = Searching.individualHDISearch(countries, "Canada", 1997);
+                dblCan2007 = Searching.individualHDISearch(countries, "Canada", 2007);
+                dblCan2017 = Searching.individualHDISearch(countries, "Canada", 2017);
+                dblWorld1997 = Average.yearAverage(countries, 1997);
+                dblWorld2007 = Average.yearAverage(countries, 2007);
+                dblWorld2017 = Average.yearAverage(countries, 2017);   
                 launch(args);
             }
 
-            if (strSearchChoice.equals("2")) {
-
+            if (strChartChoice.equals("2")) {
+                intChart = 0;
+                launch(args);
             }
 
 
         }
 
     }
+
+    public void start(Stage primaryStage) throws Exception {
+        if (intChart == 1) {
+            primaryStage.setScene(new Scene(Charts.theBarChart(dblCan1997, dblCan2007, dblCan2017, dblWorld1997, dblWorld2007, dblWorld2017)));
+        } else {
+            primaryStage.setScene(new Scene(Charts.theLineChart()));
+        }
+        primaryStage.show();
+    }
+
+
 
 }

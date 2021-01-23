@@ -26,31 +26,26 @@ public class Charts {
     public static CategoryAxis xAxis;
     public static NumberAxis yAxis;
 
-    public static Parent theBarChart() {
+    public static Parent theBarChart(double can1997, double can2007, double can2017, double world1997, double world2007, double world2017) {
 
-        String[] years = { "2007", "2008", "2009" };
+        String[] years = { "1997", "2007", "2017" };
         xAxis = new CategoryAxis();
         xAxis.setCategories(FXCollections.<String>observableArrayList(years));
-        yAxis = new NumberAxis("Units Sold", 0.0d, 3000.0d, 1000.0d);
+        yAxis = new NumberAxis("HDI Score", 0.0, 1.0, 0.1);
         ObservableList<BarChart.Series> barChartData =
             FXCollections.observableArrayList(
-                new BarChart.Series("Apples",
-                                    FXCollections.observableArrayList(
-                    new BarChart.Data(years[0], 567d),
-                    new BarChart.Data(years[1], 1292d),
-                    new BarChart.Data(years[2], 1292d))),
-                new BarChart.Series("Lemons",
-                                    FXCollections.observableArrayList(
-                    new BarChart.Data(years[0], 956),
-                    new BarChart.Data(years[1], 1665),
-                    new BarChart.Data(years[2], 2559))),
-                new BarChart.Series("Oranges",
-                                    FXCollections.observableArrayList(
-                    new BarChart.Data(years[0], 1154),
-                    new BarChart.Data(years[1], 1927),
-                    new BarChart.Data(years[2], 2774)))
+                new BarChart.Series("Canada",
+                    FXCollections.observableArrayList(
+                    new BarChart.Data(years[0], can1997),
+                    new BarChart.Data(years[1], can2007),
+                    new BarChart.Data(years[2], can2017))),
+                new BarChart.Series("World",
+                    FXCollections.observableArrayList(
+                    new BarChart.Data(years[0], world1997),
+                    new BarChart.Data(years[1], world2007),
+                    new BarChart.Data(years[2], world2017)))
             );
-        chart = new BarChart(xAxis, yAxis, barChartData, 25.0d);
+        chart = new BarChart(xAxis, yAxis, barChartData, 20.0);
         return chart;
     }
 
