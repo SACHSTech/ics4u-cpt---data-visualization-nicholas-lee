@@ -1,5 +1,6 @@
 package data_app;
 
+// Import statements
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.Parent;
@@ -11,16 +12,21 @@ import javafx.scene.chart.XYChart;
 
 public class Charts {
     
+    // Initialize variables for bar chart
     public static BarChart chart;
     public static CategoryAxis xAxis;
     public static NumberAxis yAxis;
 
+    // Creates bar chart based on parameters
     public static Parent theBarChart(double can1997, double can2007, double can2017, double world1997, double world2007, double world2017) {
 
+        // Creates the x-axis and y-axis
         String[] years = { "1997", "2007", "2017" };
         xAxis = new CategoryAxis();
         xAxis.setCategories(FXCollections.<String>observableArrayList(years));
         yAxis = new NumberAxis("HDI Score", 0.0, 1.0, 0.1);
+
+        // Adds data and creates bar chart
         ObservableList<BarChart.Series> barChartData =
             FXCollections.observableArrayList(
                 new BarChart.Series("Canada",
@@ -39,26 +45,31 @@ public class Charts {
         return chart;
     }
 
+    //  Initialize variables for line chart
     public static final String[] CATEGORIES = { "1997", "2007", "2017"};
     public static LineChart<String, Number> chart2;
     public static CategoryAxis xAxis2;
     public static NumberAxis yAxis2;
 
-    public static Parent theLineChart(double can1997, double can2007, double can2017, double world1997, double world2007, double world2017){
+    // Creates line chart based on parameters
+    public static Parent theLineChart(double can1997, double can2007, double can2017, double world1997, double world2007, double world2017) {
+
+        // Creates title of the chart, x-axis, and y-axis
         xAxis2 = new CategoryAxis();
         yAxis2 = new NumberAxis("HDI Score", 0.0, 1.0, 0.2);
         chart2 = new LineChart<>(xAxis2, yAxis2);
-        // setup chart
         chart2.setTitle("Line Chart of Canada HDI vs World HDI");
         xAxis2.setLabel("Year");
         yAxis2.setLabel("HDI Score");
-        // add starting data
+
+        // Adds data and creates line chart
         XYChart.Series<String, Number> series = new XYChart.Series<>();
         series.setName("World HDI");
         series.getData().add(new XYChart.Data<String, Number>(CATEGORIES[0], world1997));
         series.getData().add(new XYChart.Data<String, Number>(CATEGORIES[1], world2007));
         series.getData().add(new XYChart.Data<String, Number>(CATEGORIES[2], world2017));
         chart2.getData().add(series);
+
         XYChart.Series<String, Number> series2 = new XYChart.Series<>();
         series2.setName("Canada HDI");
         series2.getData().add(new XYChart.Data<String, Number>(CATEGORIES[0], can1997));
@@ -67,5 +78,4 @@ public class Charts {
         chart2.getData().add(series2);
         return chart2;
     }
-
 }
