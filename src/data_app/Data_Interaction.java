@@ -93,23 +93,23 @@ public class Data_Interaction {
     * @return the sorted array
     */
     public static Country[] sortMaxHDI(Country[] theArray){
-        int currentMinIndex;
+        int currentMaxIndex;
 
         // Sorts for the whole array minus one
         for (int i = 0; i < theArray.length - 1; i++) {
-            currentMinIndex = i;
+            currentMaxIndex = i;
 
             for (int j = i + 1; j < theArray.length; j++) {
-                // Checks to see if the HDI value is greater than the current min
-                if (theArray[j].getHDI() > theArray[currentMinIndex].getHDI()) {
-                    currentMinIndex = j;
+                // Checks to see if the HDI value is greater than the current max
+                if (theArray[j].getHDI() > theArray[currentMaxIndex].getHDI()) {
+                    currentMaxIndex = j;
                 }
             }
 
             // Swaps the elements 
-            if (i != currentMinIndex) {
-                Country temp = theArray[currentMinIndex];
-                theArray[currentMinIndex] = theArray[i];
+            if (i != currentMaxIndex) {
+                Country temp = theArray[currentMaxIndex];
+                theArray[currentMaxIndex] = theArray[i];
                 theArray[i] = temp;
             }
         }
@@ -124,7 +124,7 @@ public class Data_Interaction {
     * Searchs the data set for a specified country name
     * @param theArray - the country array 
     * @param strKey - the name of the country
-    * @return the element of array with the name of the country
+    * @return a message stating that the search results are printed above
     */
     public static String nameSearch(Country[] theArray, String strKey){
         String strElement;
@@ -141,15 +141,15 @@ public class Data_Interaction {
             }
         }
 
-        // Returns blank if the name is not found
-        return " ";
+        // Returns a message
+        return "\nThe search results are posted above";
       }
   
     /**
     * Searchs the data set for a specified year
     * @param theArray - the country array 
     * @param strKey - the year
-    * @return the element of array with the specified year
+    * @return a message that the data set has been filtered
     */
     public static String yearFilterSearch(Country[] theArray, int intKey) {
         int intElement;
@@ -167,14 +167,14 @@ public class Data_Interaction {
         }
 
         // Returns blank if the year is not found
-        return " ";
+        return "\nThe data set has been filtered";
     }
   
     /**
     * Searchs the data set for a specified continent
     * @param theArray - the country array 
     * @param strKey - the continent
-    * @return the element of array with the specified continent
+    * @return a message that the data set has been filtered
     */
     public static String contFilterSearch(Country[] theArray, String strKey){
         String strElement;
@@ -191,8 +191,8 @@ public class Data_Interaction {
             }
         }
 
-        // Returns blank if the continent is not found
-        return " ";
+        // Returns a message
+        return "\nThe data set has been filtered";
     }
   
     /**
@@ -200,7 +200,7 @@ public class Data_Interaction {
     * @param theArray - the country array 
     * @param intYear - the year
     * @param strCont - the continent
-    * @return the element of array with the specified year and continent
+    * @return  a message that the data set has been filtered
     */
     public static String twoFilterSearch(Country[] theArray, int intYear, String strCont){
         String strTheCont;
@@ -219,8 +219,8 @@ public class Data_Interaction {
             }
         }
 
-        // Returns blank if it is not found in the array
-        return " ";
+        // Returns a message
+        return "\nThe data set has been filtered";
     }
   
     /**
@@ -243,12 +243,11 @@ public class Data_Interaction {
             if (strTheName.equals(strName) && intTheYear == intYear) {
 
                 // Prints out and returns the element of the array
-                System.out.println(theArray[i].toString());
                 return theArray[i].toString();
             }
         }
 
-        // Returns messsage if the record is not found in the data set
+        // Returns a message
         return "Not found in data set";
     }
   

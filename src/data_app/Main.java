@@ -36,7 +36,10 @@ public class Main extends Application {
         // Array that holds the country instances
         Country[] countries = new Country[441];
 
+        // Allows for the reading of the CSV file
         BufferedReader data = new BufferedReader(new FileReader("HDI.csv"));
+
+        // Allows for input to be taken from the user
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
 
         // The while loop runs for the whole data set
@@ -52,13 +55,14 @@ public class Main extends Application {
             year = Integer.parseInt(elements[2]);
             HDI = Double.parseDouble(elements[3]);
 
-            // Creates a country object and puts the instance into an array
+            // Creates a country object and puts the object into an array
             country = new Country(name, cont, year, HDI);
             countries[intCount] = country;
 
             intCount++;
         }
 
+        // Closes file
         data.close();
 
         // Main menu options are presented
@@ -74,7 +78,7 @@ public class Main extends Application {
 
         // Allows the user to select and view the options as many times as they want
         while(strChoice.equals("1") || strChoice.equals("2") || strChoice.equals("3")|| strChoice.equals("4") || strChoice.equals("5") || strChoice.equals("6")){
-            System.out.print("Enter Menu Choice: ");
+            System.out.print("\nEnter Menu Choice: ");
             strChoice = key.readLine();
 
             // Allows the user to view data sorted by HDI value
@@ -110,7 +114,7 @@ public class Main extends Application {
                 System.out.print("Enter Key: ");
                 String strKey = key.readLine();
 
-                Data_Interaction.nameSearch(countries, strKey);
+                System.out.println(Data_Interaction.nameSearch(countries, strKey));
             }
     
             // Allows the user to view the data with filters applied
@@ -124,14 +128,14 @@ public class Main extends Application {
                     System.out.print("Enter year (1997, 2007, or 2017): ");
                     int intYear = Integer.parseInt(key.readLine());
 
-                    Data_Interaction.yearFilterSearch(countries, intYear);
+                    System.out.println(Data_Interaction.yearFilterSearch(countries, intYear));
     
                 // Filters by the continent that the user inputs
                 } else if (strFilterChoice.equals("2")) {
                     System.out.print("Enter continent (Africa, Asia, Europe, North America, South America, Oceania): ");
                     String strCont = key.readLine();
 
-                    Data_Interaction.contFilterSearch(countries, strCont);
+                    System.out.println(Data_Interaction.contFilterSearch(countries, strCont));
     
                 // Filters by the both the year and continent that is inputted
                 } else if (strFilterChoice.equals("3")) {
@@ -141,7 +145,7 @@ public class Main extends Application {
                     System.out.print("Enter continent (Africa, Asia, Europe, North America, South America, Oceania): ");
                     String strCont = key.readLine();
 
-                    Data_Interaction.twoFilterSearch(countries, intYear, strCont);
+                    System.out.println(Data_Interaction.twoFilterSearch(countries, intYear, strCont));
                 }
             }
     
@@ -156,7 +160,7 @@ public class Main extends Application {
                 int intYear = Integer.parseInt(key.readLine());
 
                 // Searches the array for the inputted name and year
-                Data_Interaction.individualSearch(countries, strName, intYear);
+                System.out.println(Data_Interaction.individualSearch(countries, strName, intYear));
             }
     
             // Allows the user to view a summary report of the data set
