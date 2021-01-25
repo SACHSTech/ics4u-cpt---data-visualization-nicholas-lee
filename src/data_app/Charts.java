@@ -45,7 +45,7 @@ public class Charts {
         return chart;
     }
 
-    //  Initialize variables for line chart
+    // Initialize variables for line chart
     public static final String[] CATEGORIES = { "1997", "2007", "2017"};
     public static LineChart<String, Number> chart2;
     public static CategoryAxis xAxis2;

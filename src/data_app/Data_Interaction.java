@@ -9,7 +9,7 @@ public class Data_Interaction {
     * @param theArray - the country array 
     * @return the average HDI of all the records
     */
-    public static double totalAverage(Country[] theArray){
+    public static double totalAverage(Country[] theArray) {
         double totalAverage = 0;
         
         // Adds all the HDI values from the array
@@ -31,7 +31,7 @@ public class Data_Interaction {
     * @param intYear - the year
     * @return the average HDI for that year
     */
-    public static double yearAverage(Country[] theArray, int intYear){
+    public static double yearAverage(Country[] theArray, int intYear) {
         double totalAverage = 0;
         int intTheYear;
         
@@ -60,7 +60,7 @@ public class Data_Interaction {
     * @param theArray - the country array 
     * @return the sorted array
     */
-    public static Country[] sortMinHDI(Country[] theArray){
+    public static Country[] sortMinHDI(Country[] theArray) {
         int currentMinIndex;
 
         // Sorts for the whole array minus one and sets the current min to the front of the unsorted list
@@ -92,7 +92,7 @@ public class Data_Interaction {
     * @param theArray - the country array 
     * @return the sorted array
     */
-    public static Country[] sortMaxHDI(Country[] theArray){
+    public static Country[] sortMaxHDI(Country[] theArray) {
         int currentMaxIndex;
 
         // Sorts for the whole array minus one
@@ -126,7 +126,7 @@ public class Data_Interaction {
     * @param strKey - the name of the country
     * @return a message stating that the search results are printed above
     */
-    public static String nameSearch(Country[] theArray, String strKey){
+    public static String nameSearch(Country[] theArray, String strKey) {
         String strElement;
   
         // Runs through the whole array
@@ -166,7 +166,7 @@ public class Data_Interaction {
             }
         }
 
-        // Returns blank if the year is not found
+        // Returns a message
         return "\nThe data set has been filtered";
     }
   
@@ -176,7 +176,7 @@ public class Data_Interaction {
     * @param strKey - the continent
     * @return a message that the data set has been filtered
     */
-    public static String contFilterSearch(Country[] theArray, String strKey){
+    public static String contFilterSearch(Country[] theArray, String strKey) {
         String strElement;
 
         // Runs through the whole array
@@ -202,7 +202,7 @@ public class Data_Interaction {
     * @param strCont - the continent
     * @return  a message that the data set has been filtered
     */
-    public static String twoFilterSearch(Country[] theArray, int intYear, String strCont){
+    public static String twoFilterSearch(Country[] theArray, int intYear, String strCont) {
         String strTheCont;
         int intTheYear;
 
@@ -230,7 +230,7 @@ public class Data_Interaction {
     * @param intYear - the year
     * @return the element of array that is an individual country
     */
-    public static String individualSearch(Country[] theArray, String strName, int intYear){
+    public static String individualSearch(Country[] theArray, String strName, int intYear) {
         String strTheName;
         int intTheYear;
 
@@ -258,7 +258,7 @@ public class Data_Interaction {
     * @param intYear - the year
     * @return the HDI of the specific country
     */
-    public static double individualHDISearch(Country[] theArray, String strName, int intYear){
+    public static double individualHDISearch(Country[] theArray, String strName, int intYear) {
         String strTheName;
         int intTheYear;
 

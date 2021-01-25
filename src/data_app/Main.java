@@ -77,7 +77,7 @@ public class Main extends Application {
         System.out.println("\nEnter any other key to exit");
 
         // Allows the user to select and view the options as many times as they want
-        while(strChoice.equals("1") || strChoice.equals("2") || strChoice.equals("3")|| strChoice.equals("4") || strChoice.equals("5") || strChoice.equals("6")){
+        while (strChoice.equals("1") || strChoice.equals("2") || strChoice.equals("3")|| strChoice.equals("4") || strChoice.equals("5") || strChoice.equals("6")) {
             System.out.print("\nEnter Menu Choice: ");
             strChoice = key.readLine();
 

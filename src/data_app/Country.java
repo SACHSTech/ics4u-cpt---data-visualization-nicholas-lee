@@ -15,7 +15,7 @@ public class Country {
     * @param theYear - the year
     * @param theHDI - the HDI
     */
-    public Country(String theName, String theCont, int theYear, double theHDI){
+    public Country(String theName, String theCont, int theYear, double theHDI) {
         this.name = theName;
         this.continent = theCont;
         this.year = theYear;
@@ -26,7 +26,7 @@ public class Country {
     * Getter method for country's name
     * @return country's name
     */
-    public String getName(){
+    public String getName() {
         return name;
     }
 
@@ -34,7 +34,7 @@ public class Country {
     * Getter method for the continent
     * @return the continent
     */
-    public String getCont(){
+    public String getCont() {
         return continent;
     }
 
@@ -42,7 +42,7 @@ public class Country {
     * Getter method for the year
     * @return the year
     */
-    public int getYear(){
+    public int getYear() {
         return year;
     }
 
@@ -50,7 +50,7 @@ public class Country {
     * Getter method for country's HDI
     * @return country's HDI
     */
-    public double getHDI(){
+    public double getHDI() {
         return HDI;
     }
 
@@ -58,7 +58,7 @@ public class Country {
     * String representation of a country 
     * @return all the attributes regarding a country
     */
-    public String toString(){
+    public String toString() {
         return this.name + " | " + this.continent + " | " + this.year + " | " + this.HDI;
     }
 }

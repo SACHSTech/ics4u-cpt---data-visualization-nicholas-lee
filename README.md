@@ -12,6 +12,6 @@ Edit this page to include:
 * I selected this data set for the project because I wanted to see if I could create a program that not only allows the user to view the data set, but to also be able to view trends and make comparisons. I first learned about the Human Development Index when studying grade 12 economics (CIA4U1) and I am interested to see if the HDI has improved globally and specifically in Canada. Overall, I believe that this data is not only interesting, but also displays the conditions of various countries and the world.
 
 * Embedded or link to your Demo Video
-
+* [Link to Demo Video](https://youtu.be/wlG0p3ghFxM)
 
 Check the [VS Code, Java, and JavaFX Install and Set Up](https://docs.google.com/document/d/1s5oTmY8A8TDZu303p_DaH6CEAcC9xL8-aNX-pAxCcps/edit?usp=sharing) doc for set up and getting started instructions.
